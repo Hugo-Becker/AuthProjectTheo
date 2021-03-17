@@ -51,28 +51,23 @@
                                 @enderror
                             </div>
                         </div>
-                        <div>
 
-                        
 
-                        <div class="container row">
-                                    
+                        <div class="form-group container row"> 
+
                             @foreach ($avatars as $avatar)
                                 <div class="input-group my-2">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text">
                                             <input type="radio" aria-label="Radio button for following text input" value="{{$avatar->id}}" name="avatar_id">
                                         </div>
+                                        <img src="{{asset($avatar->avatar_url)}}" alt="" height="100px">
                                     </div>
-                                    <img src="{{asset('storage/img/'.$avatar->avatar_url)}}" alt="" height="100px">
                                 </div>
-                            @endforeach
+                            @endforeach  
 
                         </div>
 
-                         
-                          
-                        </div>
 
                         <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>

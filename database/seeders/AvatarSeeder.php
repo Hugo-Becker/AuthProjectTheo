@@ -18,7 +18,11 @@ class AvatarSeeder extends Seeder
             [
                 [
                    "name" => 'First' ,
-                   "avatar_url" => ''
+                   "avatar_url" => 'silhouette.jpeg'
+                ],
+                [
+                    "name" => 'Second' ,
+                    "avatar_url" => 'silhouette.jpeg'
                 ]
             ]
         );
