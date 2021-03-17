@@ -38,6 +38,41 @@
                                 @enderror
                             </div>
                         </div>
+                        <div class="form-group row">
+                            <label for="age" class="col-md-4 col-form-label text-md-right">{{ __('Age') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="age" type="number" class="form-control @error('age') is-invalid @enderror" name="age" value="{{ old('age') }}" required autocomplete="age">
+
+                                @error('age')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div>
+
+                        
+
+                        <div class="container row">
+                                    
+                            @foreach ($avatars as $avatar)
+                                <div class="input-group my-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="radio" aria-label="Radio button for following text input" value="{{$avatar->id}}" name="avatar_id">
+                                        </div>
+                                    </div>
+                                    <img src="{{asset('storage/img/'.$avatar->avatar_url)}}" alt="" height="100px">
+                                </div>
+                            @endforeach
+
+                        </div>
+
+                         
+                          
+                        </div>
 
                         <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
