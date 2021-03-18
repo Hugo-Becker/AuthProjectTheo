@@ -14,7 +14,7 @@
                 <div class="card col-3 m-2" style="width: 18rem;">
                     <div class="text-center">
                         @if ($avatar->id ==1)
-                            <img src="{{asset($avatar->avatar_url)}}" alt="" class="img-fluid">
+                            <img src="{{asset('storage/img/'.$avatars[0]->avatar_url)}}" alt="" class="img-fluid">
                         @else
                             <img src="{{asset('storage/img/'.$avatar->avatar_url)}}" alt="" class="img-fluid">
                         @endif

@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Models\Avatar;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -41,12 +40,6 @@ class RegisterController extends Controller
     {
         $this->middleware('guest');
     }
-
-    // public function index()
-    // {
-    //     $avatars =Avatar::all();
-    //     return $avatars;
-    // }
 
     /**
      * Get a validator for an incoming registration request.

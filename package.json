@@ -17,10 +17,7 @@
         "lodash": "^4.17.19",
         "popper.js": "^1.12",
         "postcss": "^8.1.14",
-<<<<<<< HEAD
         "resolve-url-loader": "^3.1.2",
-=======
->>>>>>> 44eeaa8fe7a94d31335779e19a4de5119da47d44
         "sass": "^1.15.2",
         "sass-loader": "^8.0.0"
     }

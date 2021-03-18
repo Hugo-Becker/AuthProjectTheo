@@ -29,9 +29,10 @@ Route::resource('users',UserController::class);
 Route::resource('images',ImageController::class);
 Route::resource('categories',CategoryController::class);
 
+// Auth::routes();
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
 Auth::routes();
-
-
-// Route::get('/register',[RegisterController::class,'index']);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
