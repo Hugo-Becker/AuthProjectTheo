@@ -3,10 +3,8 @@
 @section('content')
 
 
-
-
-
 <div class="container">
+  <h1>Les utilisateurs</h1>
   <a href="/users/create" class=" my-4 btn btn-success"> Ajouter un user</a>
     <table class="table">
         <thead>

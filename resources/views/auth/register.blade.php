@@ -83,7 +83,7 @@
                                             <input type="radio" aria-label="Radio button for following text input" id="{{$avatar->id}}" value="{{$avatar->id}}" name="avatar_id">
                                         </div>
                                         @if ($avatar->id ==1)
-                                            <img src="{{asset($avatar->avatar_url)}}" alt="" height="100px">
+                                            <img src="{{asset('storage/img/'.$avatars[0]->avatar_url)}}" alt="" height="100px">
                                         @else
                                             <img src="{{asset('storage/img/'.$avatar->avatar_url)}}" alt="" height="100px">
                                         @endif
