@@ -1,4 +1,5 @@
 @extends('layouts.app')
+{{-- @extends('template.main') --}}
 
 @section('content')
 <div class="container">

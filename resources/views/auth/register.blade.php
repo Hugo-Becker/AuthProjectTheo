@@ -52,23 +52,6 @@
                             </div>
                         </div>
 
-
-                        <div class="form-group container row"> 
-
-                            @foreach ($avatars as $avatar)
-                                <div class="input-group my-2">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text">
-                                            <input type="radio" aria-label="Radio button for following text input" value="{{$avatar->id}}" name="avatar_id">
-                                        </div>
-                                        <img src="{{asset($avatar->avatar_url)}}" alt="" height="100px">
-                                    </div>
-                                </div>
-                            @endforeach  
-
-                        </div>
-
-
                         <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
@@ -89,6 +72,26 @@
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
+                        </div>
+
+                        <div class="form-group container row mx-5"> 
+
+                            @foreach ($avatars as $avatar)
+                                <div class="input-group my-2 col-6">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="radio" aria-label="Radio button for following text input" id="{{$avatar->id}}" value="{{$avatar->id}}" name="avatar_id">
+                                        </div>
+                                        @if ($avatar->id ==1)
+                                            <img src="{{asset($avatar->avatar_url)}}" alt="" height="100px">
+                                        @else
+                                            <img src="{{asset('storage/img/'.$avatar->avatar_url)}}" alt="" height="100px">
+                                        @endif
+                                        
+                                    </div>
+                                </div>
+                            @endforeach  
+
                         </div>
 
                         <div class="form-group row mb-0">

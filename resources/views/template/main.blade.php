@@ -75,8 +75,8 @@
             </div>
         </nav>
 
-        @include('partials.nav')
-        <main class="py-4">
+        <main class="py-4 d-flex">
+            @include('partials.nav')
             @yield('content')
         </main>
     </div>
